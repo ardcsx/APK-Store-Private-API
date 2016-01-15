@@ -25,8 +25,8 @@ var apiHeaders = {
 
 // Routing Root
 app.get(routes.root, function(req, res) {
-	var warningString = "Usage: /app/:appid"+ " <br/>"+" Example: /app/com.meetsapp";
-	warningString += "<br />Usage: /search/:appName"+ " <br/>"+" Example: /search/meetsapp";
+	var warningString = "Usage: /app/:appid&lang=:lang"+ " <br/>"+" Example: /app/com.meetsapp";
+	warningString += "<br />Usage: /search/:appName&num=:num"+ " <br/>"+" Example: /search/meetsapp";
 	res.send(warningString);
 });
 
